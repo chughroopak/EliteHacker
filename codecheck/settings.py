@@ -18,7 +18,8 @@ from dj_database_url import parse as dburl
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_FILE_DIR_ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),'compiler')
-SECRET_KEY = 'abcdef'
+#SECRET_KEY = 'h-pl=t!s7x7oo3s#lnv^1cw$4&27n)(#3v8dg4l7oejpy-wml%'
+SECRET_KEY = 'hackerrank|141225-76|4d86f6dc8a3db9a8ea66feeb36a44f0c1905eb61'
 DEBUG = 'true'
 
 

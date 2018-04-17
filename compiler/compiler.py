@@ -33,6 +33,7 @@ class HackerRankAPI():
     # update params_dict with code data
     def manage_params(self, code):
         self.params_dict['source'] = code['source']
+        print(code['source'])
         self.params_dict['lang'] = self.getLangCode(code['lang'])
         if 'testcases' in code:
             self.params_dict['testcases'] = json.dumps(code['testcases'])
@@ -43,6 +44,7 @@ class HackerRankAPI():
     def __request(self, url, params):
         try:
             response = requests.post(url, data=params)
+            print(response)
             return response
         except Exception as e:
             print(e)
@@ -69,9 +71,4 @@ class Result():
         self.memory = result['memory']
         self.time = result['time']
         self.message = result['compilemessage']
-
-
-
-
-
 
